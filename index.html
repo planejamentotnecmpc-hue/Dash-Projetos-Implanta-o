@@ -220,7 +220,6 @@ tbody td { padding:12px 12px; border-bottom:1px solid #f1f5f9; vertical-align:mi
           <th onclick="srt(5)">Prev. <span class="si">↕</span></th>
           <th onclick="srt(6)">Real <span class="si">↕</span></th>
           <th onclick="srt(7)">Desvio <span class="si">↕</span></th>
-          <th onclick="srt(8)">Término <span class="si">↕</span></th>
           <th>Comentário / Situação</th>
           <th style="width:38px"></th>
         </tr></thead>
@@ -347,7 +346,6 @@ function render(){
       '<td style="color:#5a7a65;text-align:center">'+pct(r.prev)+'</td>'+
       '<td>'+bar(r.real,r.desv)+'</td>'+
       '<td>'+desvcell(r.desv)+'</td>'+
-      '<td style="color:#5a7a65;white-space:nowrap">'+fmtD(r.ter)+'</td>'+
       '<td class="ccol"><div class="ctext'+(hasC?"":" empty")+'">'+(hasC?r.coment:"—")+'</div></td>'+
       '<td><button class="edit-btn" onclick="openEdit('+r.n+',event)" title="Editar projeto">✏️</button></td>';
     tbody.appendChild(tr);
